@@ -38,6 +38,9 @@ tr{
 	display: table-row;
 	border-color: inherit;
 }
+tr:hover{
+	background: #fcf;
+}
 .odd{
 	background: #ececec; /*changes color of the stripes table*/
 }
@@ -95,6 +98,9 @@ a{
 a:hover{
 	text-decoration: underline;
 }
+a:visited{
+	color: #68228B;
+}
 /*-------------------------------------------  footer-------------------------------------------------------*/
 footer{
 	margin-top: 20px;
@@ -102,6 +108,9 @@ footer{
 	padding-bottom: 20px;
 	text-align: center;
 	width: 90%;
+}
+#emailfooter{
+	font-size: 95%;
 }
 /* ------------------------------------------- Media Queries -------------------------------------------------------*/
 

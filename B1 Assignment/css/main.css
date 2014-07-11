@@ -20,13 +20,26 @@ body{
 
 header{
 	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+	
+	background: rgba(0,255,255,1);
+background: -moz-linear-gradient(left, rgba(0,255,255,1) 0%, rgba(255,255,255,0.89) 22%, rgba(255,255,255,0.5) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,255,255,1)), color-stop(22%, rgba(255,255,255,0.89)), color-stop(100%, rgba(255,255,255,0.5)));
+background: -webkit-linear-gradient(left, rgba(0,255,255,1) 0%, rgba(255,255,255,0.89) 22%, rgba(255,255,255,0.5) 100%);
+background: -o-linear-gradient(left, rgba(0,255,255,1) 0%, rgba(255,255,255,0.89) 22%, rgba(255,255,255,0.5) 100%);
+background: -ms-linear-gradient(left, rgba(0,255,255,1) 0%, rgba(255,255,255,0.89) 22%, rgba(255,255,255,0.5) 100%);
+background: linear-gradient(to right, rgba(0,255,255,1) 0%, rgba(255,255,255,0.89) 22%, rgba(255,255,255,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffff', endColorstr='#ffffff', GradientType=1 );
 }
 h1{
 	margin-top: 0;
 	padding-top: 10px;
+	padding-left: 1%;
+	font-family: roboto, helvetica, sans-serif;
+	font-size: 250%;
 }
 h2{
 	margin-top: 20px;
+	font-size: 150%;
 }
 /*-------------------------------------------  table -------------------------------------------------------*/
 table{
@@ -39,7 +52,7 @@ tr{
 	border-color: inherit;
 }
 tr:hover{
-	background: #fcf;
+	background: rgba(0, 255, 254, .25); 
 }
 .odd{
 	background: #ececec; /*changes color of the stripes table*/
@@ -64,21 +77,19 @@ td:first-child{
 }
 /*-------------------------------------------  top section-------------------------------------------------------*/
 .main{
-
+	
 	overflow: auto;
 	/*border-bottom: 1px solid #bbb8bf;*/
-}
-.main p{
-	width: 67.5%;
-	float: left;
-	font-size: 1.4em;
-
-}
-.main figure{
 	clear: both;
-	float: right;
+	float: left;
+	width: 67.5%;
+	font-size: 1.4em;
+}
+
+.sidebar{
+	float: left;
 	margin: 15px 0 20px 0;
-	width: 30%;
+	width: 32%;
 
 }
 figure img{
@@ -87,7 +98,26 @@ figure img{
 .sec{
 	clear: both;
 	margin-top: 40px;
+	padding-top: 10px;
 	
+}
+.cta{
+	font-size: 95%;
+	width: 30%;
+	margin: 5px;
+	padding: 0 5px;
+	border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 0, 0 100%, from(black), to(rgba(0, 255, 254, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(rgb(0, 255, 254), rgba(0, 255, 254, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(rgb(0, 255, 254), rgba(0, 255, 254, 0)) 1 100%;    
+    -o-border-image:
+      -o-linear-gradient(rgb(0, 255, 254), rgba(0, 255, 254, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, rgb(0, 255, 254), rgba(0, 255, 254, 0)) 1 100%;
 }
 
 /*-------------------------------------------  links -------------------------------------------------------*/

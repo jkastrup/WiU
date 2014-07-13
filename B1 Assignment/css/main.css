@@ -45,7 +45,7 @@ h2{
 table{
 	background: #f7f7f9;  /*changes color of the background of the table*/
 	border-collapse: collapse;
-	width: 100%;
+	width: 70%;
 	border: 1px solid #000;
 }
 tr{
